@@ -6,7 +6,29 @@
 {% block content %}
     <div id="boards_header">
         <span>ProMan</span>
-        <button>+ New Board</button>
+        <button id="new_board_btn">+ New Board</button>
     </div>
-    <div id="boards">Boards are loading...</div>
+
+    <div id="new_board">
+        <div id="new_board_header">
+            <span>New Board</span>
+            <button>+ New Card</button>
+            <img src="/static/img/up_arrow.png">
+        </div>
+        <div id="new_board_thead">
+            <div class="new_board_tr_th">New</div>
+            <div class="new_board_tr_th">In progress</div>
+            <div class="new_board_tr_th">Testing</div>
+            <div class="new_board_tr_th">Done</div>
+        </div>
+        <div id="new_board_tbody">
+            <div class="new_board_td"></div>
+            <div class="new_board_td"></div>
+            <div class="new_board_td"></div>
+            <div class="new_board_td"></div>
+        </div>
+    </div>
+
+    <div id="boards">
+    </div>
 {% endblock %}

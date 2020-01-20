@@ -19,14 +19,14 @@ export let dom = {
 
         for(let board of boards){
             boardList += `
-                <li>${board.title}</li>
+                <div>${board.title}</div>
             `;
         }
 
         const outerHtml = `
-            <ul class="board-container">
+            <div class="board-container">
                 ${boardList}
-            </ul>
+            </div>
         `;
 
         let boardsContainer = document.querySelector('#boards');

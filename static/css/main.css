@@ -1,6 +1,5 @@
 body{
     background-image: url("/static/img/background_body.jpg");
-    /*background-repeat: repeat;*/
     color: white;
 }
 
@@ -15,6 +14,51 @@ header, footer{
 header img{
     margin-top: 5px;
 }
+
+#new_board{
+    width: 95%;
+    margin: 15px auto;
+}
+
+#new_board_header{
+    border: 1px solid red;
+}
+
+#new_board_header button{
+    margin: 5px 0 5px 15px;
+}
+
+#new_board_header span{
+    margin: 5px 0 5px 15px;
+}
+
+#new_board_header img{
+    height: 40px;
+    margin-right: 15px;
+    float: right;
+}
+
+.new_board_tr_th{
+    border: 1px solid red;
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.new_board_td{
+    border: 1px solid red;
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+    width: 25%;
+    height: 500px;
+}
+
+#boards{
+    margin-top: 15px;
+}
+
 #boards_header{
     width: 95%;
     margin: 15px auto;
@@ -27,6 +71,7 @@ header img{
 #boards_header button{
     display: block;
     float: right;
+    margin: auto 0;
 }
 
 #boards_header button:hover{
@@ -36,9 +81,13 @@ header img{
 #boards {
     width: 95%;
     margin: 15px auto;
-    border: 1px solid yellow;
-    background-color: green;
+    /*border: 1px solid yellow;*/
 }
+
+/*.board-container{*/
+/*    margin-top: 15px;*/
+/*    border: 1px solid yellow;*/
+/*}*/
 
 footer {
     text-align: center;
