@@ -1,3 +1,40 @@
+body{
+    background-image: url("/static/img/background_body.jpg");
+    /*background-repeat: repeat;*/
+    color: white;
+}
+
+header, footer{
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+#header-text{
+    margin: 0 auto;
+    font-size: 50pt;
+}
+header img{
+    margin-top: 5px;
+}
+
+h1{
+    /*text-align: center;*/
+    font-size: 50pt;
+}
+
+h2{
+    font-size: 35pt;
+}
+
+
 #boards {
     background-color: green;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 24px;
 }
