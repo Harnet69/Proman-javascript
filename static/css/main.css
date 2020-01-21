@@ -9,9 +9,9 @@ header, footer{
     text-align: center;
 }
 
-header{
-    height: 70px;
-}
+/*header{*/
+/*    height: 70px;*/
+/*}*/
 
 #header-text{
     margin: 0 auto;
