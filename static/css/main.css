@@ -80,7 +80,7 @@ header img{
 
 #boards_header{
     width: 95%;
-    margin: 15px auto;
+    margin: 5px auto 0 auto;
 }
 
 #boards_header span{
@@ -90,7 +90,7 @@ header img{
 #boards_header button{
     display: block;
     float: right;
-    margin: auto 0;
+    margin-top: 5px;
 }
 
 #boards_header button:hover{
