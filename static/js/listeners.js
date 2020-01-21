@@ -1,12 +1,18 @@
 // add listener to up arrow to open/close boards details
 export function boardDetails() {
-    let showBoarder_Details_btn = document.getElementById('show_boarder_details');
+    let showBoarderDetailsBtn = document.getElementById('show_boarder_details');
     let boardDetails = document.getElementById('board_details');
     let newCardButton = document.getElementById('add_new_card');
+    let arrowIco = document.getElementById('show_boarder_details');
 
-    showBoarder_Details_btn.addEventListener('click', function () {
+    showBoarderDetailsBtn.addEventListener('click', function () {
         boardDetails.classList.toggle('elem_hide');
         newCardButton.classList.toggle('elem_hide');
+        if(boardDetails.className === 'elem_hide'){
+            arrowIco.setAttribute('src', "/static/img/down.png");
+        }else{
+            arrowIco.setAttribute('src', "/static/img/up.png");
+        }
     })
 }
 
