@@ -26,7 +26,9 @@ header img{
 }
 
 #new_board_header{
+    font-size: larger;
     border: 2px solid #3B666B;
+    height: 50px;
 }
 
 #new_board_header button{
@@ -51,12 +53,12 @@ header img{
     width: 25%;
 }
 
-#new_board_thead{
-    display: block;
+#elem_show{
+    border-color: #9C1A1C;
+    display: none;
 }
 
 .elem_hide{
-    border-color: #9C1A1C;
     display: none;
 }
 
