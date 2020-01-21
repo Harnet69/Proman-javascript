@@ -1,5 +1,6 @@
 // It uses data_handler.js to visualize elements
 import { dataHandler } from "./data_handler.js";
+import { boardDetails } from "./listeners.js";
 
 export let dom = {
     init: function () {
@@ -10,6 +11,7 @@ export let dom = {
         dataHandler.getBoards(function(boards){
             dom.showBoards(boards);
         });
+        boardDetails(); // add listener to up arrow
     },
     showBoards: function (boards) {
         // shows boards appending them to #boards div
