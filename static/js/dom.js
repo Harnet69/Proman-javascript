@@ -22,7 +22,7 @@ export let dom = {
 
         for(let board of boards){
             boardList += `
-                <div>${board.title}</div>
+                <div class="user-board">${board.title}</div>
             `;
         }
 

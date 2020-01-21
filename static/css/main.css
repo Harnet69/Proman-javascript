@@ -36,6 +36,7 @@ header img{
 }
 
 #new_board_header span{
+    font-size: smaller;
     margin: 5px 0 5px 15px;
 }
 
@@ -69,8 +70,7 @@ header img{
 }
 
 .new_board_td{
-    border: 1px solid #3B666B;
-    float: left;
+    border: 1px solid blue;
     text-align: center;
     margin: 0 auto;
     /*width: 25%;*/
@@ -106,10 +106,24 @@ header img{
     /*border: 1px solid yellow;*/
 }
 
-/*.board-container{*/
-/*    margin-top: 15px;*/
-/*    border: 1px solid yellow;*/
-/*}*/
+.user-board{
+    border: 1px solid red;
+    margin-top: 15px;
+}
+
+/*user cards*/
+.card{
+    /*padding-top: 15px;*/
+    width: 98%;
+    margin: 5px auto;
+    height: 50px;
+    /*border: 1px solid #9C1A1C;*/
+    background-color: rgba(255,255,255,0.3);
+}
+
+.new_board_td{
+    padding-left: 0;
+}
 
 footer {
     text-align: center;
