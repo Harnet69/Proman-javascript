@@ -21,7 +21,7 @@ header img{
 }
 
 #new_board_header{
-    border: 1px solid red;
+    border: 2px solid #3B666B;
 }
 
 #new_board_header button{
@@ -39,19 +39,23 @@ header img{
 }
 
 .new_board_tr_th{
-    border: 1px solid red;
+    border: 1px solid #3B666B;
     float: left;
     text-align: center;
     margin: 0 auto;
     width: 25%;
 }
 
+.new_board_tbody{
+    background-color: #485F6E;
+}
+
 .new_board_td{
-    border: 1px solid red;
+    border: 1px solid #3B666B;
     float: left;
     text-align: center;
     margin: 0 auto;
-    width: 25%;
+    /*width: 25%;*/
     height: 300px;
 }
 
