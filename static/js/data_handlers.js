@@ -16,6 +16,7 @@ export function getDataFromBoard() {
     clearBoard();
     clearBoard();
     clearBoard();
+    document.getElementById('new_board').style.display = 'none';
     console.log(boardData);
     return (boardData);
 }
