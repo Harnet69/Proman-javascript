@@ -35,7 +35,7 @@ export function newCard() {
         let newCard = document.createElement('li');
         newCard.innerHTML = "<textarea placeholder='Your task' rows=\"2\" cols=\"50\">\n" +
             "" +
-            "</textarea>"
+            "</textarea>";
         newCard.classList.add('card');
         stageNewCol.appendChild(newCard);
     });

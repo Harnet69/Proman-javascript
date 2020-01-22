@@ -28,18 +28,23 @@ header img{
     height: 50px;
 }
 
-#new_board_header button{
-    margin: 5px 0 5px 15px;
+#new_board_header textarea{
+    font-size: smaller;
+    margin: 5px 3px 5px 15px;
+    height: 30px;
+    display: block;
+    float: left;
 }
 
-#new_board_header span{
-    font-size: smaller;
+#new_board_header button{
     margin: 5px 0 5px 15px;
+    display: block;
 }
 
 #new_board_header img{
-    height: 30px;
-    margin: 5px 15px 0 0;
+    height: 20px;
+    margin: -30px 15px 0 0;
+    display: block;
     float: right;
 }
 
