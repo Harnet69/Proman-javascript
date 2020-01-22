@@ -50,16 +50,21 @@ header img{
     color: #9C1A1C;
 }
 
-#new_board_header img:hover{
+#show_boarder_details:hover{
     background-color: #3B666B;
     float:right;
 }
 
-#new_board_header img{
+#show_boarder_details{
     height: 20px;
     margin: 10px 5px 0 0;
     display: block;
     float: right;
+}
+
+#save_board{
+    height: 35px;
+    padding-right: 5px;
 }
 
 .new_board_tr_th{
