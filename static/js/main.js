@@ -1,5 +1,5 @@
 import { dom } from "./dom.js";
-import {newBoard, boardDetails, newCard, cloneElement, saveBoard} from "./listeners.js";
+import {newBoard, boardDetails, newCard, saveBoard} from "./listeners.js";
 // import {getDataFromBoard} from "./data_handlers";
 
 window.onload = function() {

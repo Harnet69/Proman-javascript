@@ -11,8 +11,7 @@ export let dom = {
         dataHandler.getBoards(function(boards){
             dom.showBoards(boards);
         });
-        newBoard(); // show a new board
-        boardDetails(); // add listener to up arrow
+
     },
     showBoards: function (boards) {
         // shows boards appending them to #boards div

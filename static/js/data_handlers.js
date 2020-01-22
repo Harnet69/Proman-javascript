@@ -1,16 +1,16 @@
-// create new board
+// save data from board to array
 export function getDataFromBoard() {
-    let boardName = document.getElementById('bord-name');
-
-    let stageNew = document.getElementById('stage-newcards');
-    let stageInProgress = document.getElementById('stage-inprogress');
-    let stageTesting = document.getElementById('stage-testing');
-    let stageDone = document.getElementById('stage-done');
+    let boardData = [];
 
     let userData = document.getElementsByClassName('new_board_td');
+    let boardName = document.getElementById('bord-name').value;
+    boardData.push(boardName);
     for(let stage of userData){
+        let cardStage = []; // 0: New, 1: InProgress, 2: Test, 3: Done
+        boardData.push(cardStage);
         for(let i=0; i<stage.children.length; i++){
-            console.log(stage.children[i].children[0].value)
+            cardStage.push(stage.children[i].children[0].value);
         }
     }
+    return (boardData);
 }
