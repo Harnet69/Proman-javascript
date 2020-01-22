@@ -1,3 +1,4 @@
+import {clearBoard} from "./dom_manipulations.js"
 // save data from board to array
 export function getDataFromBoard() {
     let boardData = [];
@@ -12,5 +13,9 @@ export function getDataFromBoard() {
             cardStage.push(stage.children[i].children[0].value);
         }
     }
+    clearBoard();
+    clearBoard();
+    clearBoard();
+    console.log(boardData);
     return (boardData);
 }
