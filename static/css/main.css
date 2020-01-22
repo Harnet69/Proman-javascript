@@ -34,16 +34,30 @@ header img{
     height: 30px;
     display: block;
     float: left;
+    overflow:hidden
 }
 
-#new_board_header button{
-    margin: 5px 0 5px 15px;
+#add_new_card{
+    margin: 5px 0 5px 5px;
     display: block;
+    float: left;
+}
+
+#save_board{
+    margin: 5px 0 5px 5px;
+    display: block;
+    float:right;
+    color: #9C1A1C;
+}
+
+#new_board_header img:hover{
+    background-color: #3B666B;
+    float:right;
 }
 
 #new_board_header img{
     height: 20px;
-    margin: -30px 15px 0 0;
+    margin: 10px 5px 0 0;
     display: block;
     float: right;
 }
@@ -124,7 +138,6 @@ header img{
 }
 
 .card textarea{
-
     background-color: rgba(255,255,255,0.3);
     font-size: 15pt;
     overflow:hidden
