@@ -1,3 +1,4 @@
+import {getDataFromBoard} from "./data_handlers.js";
 // add listener to up arrow to open/close boards details
 export function boardDetails() {
     let showBoarderDetailsBtn = document.getElementById('show_boarder_details');
@@ -39,4 +40,22 @@ export function newCard() {
         newCard.classList.add('card');
         stageNewCol.appendChild(newCard);
     });
+}
+
+export function cloneElement() {
+    let addbutton = document.getElementById("save_board");
+    let destBoard = document.getElementById("user-bords");
+    addbutton.addEventListener("click", function() {
+        let boxes = document.getElementById("board_details");
+        let clone = boxes.parentElement.cloneNode(true);
+        destBoard.appendChild(clone);
+    });
+}
+
+export function saveBoard() {
+    let saveBtn = document.getElementById('save_board');
+    saveBtn.addEventListener('click', function saveBoard () {
+        getDataFromBoard();
+    })
+
 }

@@ -20,6 +20,7 @@ header img{
 #new_board{
     width: 95%;
     margin: 15px auto;
+    float: left;
 }
 
 #new_board_header{
@@ -65,6 +66,7 @@ header img{
 #save_board{
     height: 35px;
     padding-right: 5px;
+    cursor: pointer;
 }
 
 .new_board_tr_th{
@@ -99,12 +101,14 @@ header img{
 }
 
 #boards{
-    margin-top: 15px;
+    border: 1px solid red;
+    margin-top: 500px;
 }
 
 #boards_header{
     width: 95%;
     margin: 5px auto 0 auto;
+    float: left;
 }
 
 #boards_header span{
@@ -159,4 +163,8 @@ footer {
     bottom: 0;
     width: 100%;
     font-size: 15px;
+}
+
+#user-bords{
+    float: left;
 }

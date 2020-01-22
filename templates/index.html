@@ -1,43 +1,36 @@
 {% extends 'layout.html' %}
-
 {% block head %}
 {% endblock %}
-
 {% block content %}
     <div id="boards_header">
         <span>ProMan</span>
         <button id="new_board_btn">+ New Board</button>
     </div>
-
     <div id="new_board" style="display: none">
         <div id="new_board_header">
-            <textarea placeholder="Board's name" rows="1" cols="10" maxlength="10" value="New bord"></textarea>
+            <textarea id="bord-name" placeholder="Board's name" rows="1" cols="10" maxlength="10" value="New bord"></textarea>
             <button id="add_new_card">New Card</button>
             <img id="show_boarder_details" src="/static/img/up.png">
-            <img id="save_board" src="/static/img/save_ico_md.png">
+            <img id="save_board" src="/static/img/save_ico_md.png" alt="Save the board">
         </div>
         <div id="board_details">
-                <div class="new_board_tr_th">
+                <div id="stage-newcards" class="new_board_tr_th">
                     <div  class="new_board_tbody">New</div>
                     <ul id="stage-new" class="new_board_td"></ul>
                 </div>
-
-                <div class="new_board_tr_th">
+                <div id="stage-inprogress" class="new_board_tr_th">
                     <div class="new_board_tbody">Inprogress</div>
-                    <ul  class="new_board_td"></ul>
+                    <ul class="new_board_td"></ul>
                 </div>
-
-                <div class="new_board_tr_th">
+                <div id="stage-testing" class="new_board_tr_th">
                     <div class="new_board_tbody">Testing</div>
                     <ul class="new_board_td"></ul>
                 </div>
-
-                <div class="new_board_tr_th">
+                <div id="stage-done" class="new_board_tr_th">
                     <div class="new_board_tbody">Done</div>
                     <ul class="new_board_td"></ul>
                 </div>
         </div>
+        <div id="user-bords">Boards</div>
     </div>
-
-    <div id="boards"></div>
 {% endblock %}
