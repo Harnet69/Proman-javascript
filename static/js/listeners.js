@@ -1,4 +1,5 @@
 import {getDataFromBoard} from "./data_handlers.js";
+import {clearBoard} from "./dom_manipulations.js";
 // add listener to up arrow to open/close boards details
 export function boardDetails() {
     let showBoarderDetailsBtn = document.getElementById('show_boarder_details');
@@ -57,6 +58,8 @@ export function saveBoard() {
     let saveBtn = document.getElementById('save_board');
     saveBtn.addEventListener('click', function saveBoard () {
         getDataFromBoard();
+        clearBoard();
+        document.getElementById('new_board').style.display = 'none';
     })
 
 }
