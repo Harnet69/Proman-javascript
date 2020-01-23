@@ -10,11 +10,11 @@ export function getDataFromBoard() {
         let cardStage = []; // 0: New, 1: InProgress, 2: Test, 3: Done
         boardData.push(cardStage);
         for(let i=0; i<stage.children.length; i++){
+            if(stage.children[i].children[0].value !== ""){
             cardStage.push(stage.children[i].children[0].value);
+            }
         }
     }
-    clearBoard();
-    clearBoard();
     clearBoard();
     document.getElementById('new_board').style.display = 'none';
     console.log(boardData);

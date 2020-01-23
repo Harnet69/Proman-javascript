@@ -4,7 +4,8 @@ export function clearBoard() {
 
     let userData = document.getElementsByClassName('new_board_td');
     for(let stage of userData){
-        for(let i=0; i<stage.children.length; i++){
+        let stageChildrenLength = stage.children.length-1;
+        for(let i=stageChildrenLength; i>=0; i--){
             stage.children[i].remove();
         }
     }
